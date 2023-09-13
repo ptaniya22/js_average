@@ -1,3 +1,9 @@
+//округление до сотых
+var rounded = function (number) {
+  return +number.toFixed(2);
+};
+//----------------
+
 //askNumber переменная для хранения кол-ва чисел
 let askNumber = prompt('Введите количество чисел');
 let arr = [askNumber];
@@ -15,7 +21,8 @@ while (i < askNumber) {
   console.log(i, 'й эллемент массива -', arr[i]);
   i++;
 }
-average = average / askNumber;
+average = rounded(average / askNumber);
+
 console.log('среднее арифметическое', askNumber, ' чисел =', average);
 testString = 'среднее арифметическое ' + askNumber + ' чисел = ' + average;
 alert(testString);
