@@ -17,3 +17,5 @@ while (i < askNumber) {
 }
 average = average / askNumber;
 console.log('среднее арифметическое', askNumber, ' чисел =', average);
+testString = 'среднее арифметическое ' + askNumber + ' чисел = ' + average;
+alert(testString);
